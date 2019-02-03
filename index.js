@@ -10,7 +10,10 @@ function zoomed() {
   g.attr("transform", d3.event.transform);
 }
 
-var g = svg.append("g");
+var g = svg
+  .append("g")
+  .attr("id", "master-group")
+  .attr("transform", "translate(45 0)");
 
 // Append booth groups to master group
 var boothGroups = g
@@ -62,9 +65,10 @@ boothGroupData.forEach(function(group) {
     })
     .append("text")
     .text(function(d) {
-      return "Booth " + d.id;
+      return "" + d.id;
     })
-    .attr("font-size", "8px")
+    .attr("font-size", "10px")
+    .attr("font-weight", "bold")
     .attr("dy", 60)
     .attr("dx", 5);
 });
@@ -88,7 +92,10 @@ boothReservations.forEach(function(reservation) {
     .attr("dx", 5)
     .attr("font-size", "9px")
     .attr("font-weight", "bold");
-  booth.select("rect").attr("fill", "#FF5733").attr('fill-opacity', 0.5);
+  booth
+    .select("rect")
+    .attr("fill", "#FF5733")
+    .attr("fill-opacity", 0.5);
 });
 
 svg
