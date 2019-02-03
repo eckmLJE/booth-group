@@ -92,3 +92,36 @@ var boothGroupData = [
     ]
   }
 ];
+
+var boothReservations = [
+  {
+    id: 1,
+    boothId: 2,
+    orgName: "IOU"
+  },
+  {
+    id: 2,
+    boothId: 5,
+    orgName: "PSA"
+  },
+  {
+    id: 3,
+    boothId: 6,
+    orgName: "BTW"
+  },
+  {
+    id: 4,
+    boothId: 7,
+    orgName: "OTOH"
+  },
+  {
+    id: 5,
+    boothId: 12,
+    orgName: "AFAIK"
+  },
+  {
+    id: 6,
+    boothId: 15,
+    orgName: "JK"
+  }
+];

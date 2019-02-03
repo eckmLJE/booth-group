@@ -12,6 +12,7 @@ function zoomed() {
 
 var g = svg.append("g");
 
+// Append booth groups to master group
 var boothGroups = g
   .selectAll("g")
   .data(boothGroupData)
@@ -25,6 +26,7 @@ var boothGroups = g
     return "translate(" + d.groupX + " " + d.groupY + ")";
   });
 
+// For each booth group, append group rects
 boothGroupData.forEach(function(group) {
   var positions = {
     1: [0, 0],
@@ -57,16 +59,37 @@ boothGroupData.forEach(function(group) {
         ) +
         ")"
       );
-    });
+    })
+    .append("text")
+    .text(function(d) {
+      return "Booth " + d.id;
+    })
+    .attr("font-size", "8px")
+    .attr("dy", 60)
+    .attr("dx", 5);
 });
 
 g.selectAll("g.booth")
   .append("rect")
   .attr("width", groupDs.boothWidth)
   .attr("height", groupDs.boothHeight)
-  .attr("stroke", "black")
+  .attr("stroke", "steelblue")
   .attr("fill", "none")
-  .attr("stroke-width", "2px");
+  .attr("stroke-width", "1px");
+
+boothReservations.forEach(function(reservation) {
+  var booth = g.select("g#booth-" + reservation.boothId);
+  booth
+    .append("text")
+    .text(function() {
+      return reservation.orgName ? reservation.orgName : "Available";
+    })
+    .attr("dy", 15)
+    .attr("dx", 5)
+    .attr("font-size", "9px")
+    .attr("font-weight", "bold");
+  booth.select("rect").attr("fill", "#FF5733").attr('fill-opacity', 0.5);
+});
 
 svg
   .append("rect")
