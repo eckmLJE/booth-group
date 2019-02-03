@@ -2,7 +2,7 @@ var boothGroupData = [
   {
     id: 1,
     groupX: 50,
-    groupY: 25,
+    groupY: 50,
     booths: [
       {
         id: 1,
@@ -25,7 +25,7 @@ var boothGroupData = [
   {
     id: 2,
     groupX: 200,
-    groupY: 25,
+    groupY: 50,
     booths: [
       {
         id: 5,
@@ -48,7 +48,7 @@ var boothGroupData = [
   {
     id: 3,
     groupX: 50,
-    groupY: 175,
+    groupY: 225,
     booths: [
       {
         id: 9,
@@ -71,7 +71,7 @@ var boothGroupData = [
   {
     id: 4,
     groupX: 200,
-    groupY: 175,
+    groupY: 225,
     booths: [
       {
         id: 13,

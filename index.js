@@ -2,7 +2,7 @@ var svg = d3.select("#venue-svg");
 
 var groupDs = {
   boothWidth: 50,
-  boothHeight: 50,
+  boothHeight: 65,
   gutter: 5
 };
 
