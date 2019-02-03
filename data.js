@@ -1,89 +1,94 @@
-var venueBooths = [
+var boothGroupData = [
   {
     id: 1,
-    x: 50,
-    y: 50,
-    w: 50,
-    h: 65,
-    reservation: {
-      orgName: "BTW",
-      orgId: 90
-    }
+    groupX: 50,
+    groupY: 25,
+    booths: [
+      {
+        id: 1,
+        boothGroupId: 1
+      },
+      {
+        id: 2,
+        boothGroupId: 1
+      },
+      {
+        id: 3,
+        boothGroupId: 1
+      },
+      {
+        id: 4,
+        boothGroupId: 1
+      }
+    ]
   },
   {
     id: 2,
-    x: 150,
-    y: 50,
-    w: 50,
-    h: 65,
-    reservation: {
-      orgName: "IOU",
-      orgId: 7
-    }
+    groupX: 200,
+    groupY: 25,
+    booths: [
+      {
+        id: 5,
+        boothGroupId: 2
+      },
+      {
+        id: 6,
+        boothGroupId: 2
+      },
+      {
+        id: 7,
+        boothGroupId: 2
+      },
+      {
+        id: 8,
+        boothGroupId: 2
+      }
+    ]
   },
   {
     id: 3,
-    x: 250,
-    y: 50,
-    w: 50,
-    h: 65,
-    reservation: {}
+    groupX: 50,
+    groupY: 175,
+    booths: [
+      {
+        id: 9,
+        boothGroupId: 3
+      },
+      {
+        id: 10,
+        boothGroupId: 3
+      },
+      {
+        id: 11,
+        boothGroupId: 3
+      },
+      {
+        id: 12,
+        boothGroupId: 3
+      }
+    ]
   },
   {
     id: 4,
-    x: 50,
-    y: 150,
-    w: 50,
-    h: 65,
-    reservation: {}
-  },
-  {
-    id: 5,
-    x: 150,
-    y: 150,
-    w: 50,
-    h: 65,
-    reservation: {
-      orgName: "IMHO",
-      orgId: 25
-    }
-  },
-  {
-    id: 6,
-    x: 250,
-    y: 150,
-    w: 50,
-    h: 65,
-    reservation: {}
-  },
-  {
-    id: 7,
-    x: 50,
-    y: 245,
-    w: 50,
-    h: 65,
-    reservation: {
-      orgName: "FYI",
-      orgId: 25
-    }
-  },
-  {
-    id: 8,
-    x: 150,
-    y: 245,
-    w: 50,
-    h: 65,
-    reservation: {
-      orgName: "BTW",
-      orgId: 25
-    }
-  },
-  {
-    id: 9,
-    x: 250,
-    y: 245,
-    w: 50,
-    h: 65,
-    reservation: {}
+    groupX: 200,
+    groupY: 175,
+    booths: [
+      {
+        id: 13,
+        boothGroupId: 4
+      },
+      {
+        id: 14,
+        boothGroupId: 4
+      },
+      {
+        id: 15,
+        boothGroupId: 4
+      },
+      {
+        id: 16,
+        boothGroupId: 4
+      }
+    ]
   }
 ];
