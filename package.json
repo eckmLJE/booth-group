@@ -1,0 +1,14 @@
+{
+  "name": "booth-group",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Eckman <lucas.eckman@gmail.com> (https://www.lucaseckman.com/concertplan)",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
