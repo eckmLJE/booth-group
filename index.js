@@ -46,9 +46,15 @@ boothGroupData.forEach(function(group) {
       position = position + 1;
       return (
         "translate(" +
-        positions[position][0] * groupDs.boothWidth +
+        parseInt(
+          positions[position][0] * groupDs.boothWidth +
+            positions[position][0] * groupDs.gutter
+        ) +
         " " +
-        positions[position][1] * groupDs.boothHeight +
+        parseInt(
+          positions[position][1] * groupDs.boothHeight +
+            positions[position][1] * groupDs.gutter
+        ) +
         ")"
       );
     });
