@@ -127,13 +127,18 @@ function applyZoomRect() {
 
 function initialize() {
   drawMasterGroup();
-  $("#draw-booth-groups-button").click(drawBoothGroupGroups);
-  $("#draw-booths-button").click(drawBoothGroups);
-  $("#draw-booth-rects-text-button").click(function() {
-    drawBoothRects();
-    drawBoothText();
-  });
-  $("#apply-zoom-button").click(applyZoomRect);
+  drawBoothGroupGroups();
+  drawBoothGroups();
+  drawBoothRects();
+  drawBoothText();
+  applyZoomRect();
+  // $("#draw-booth-groups-button").click(drawBoothGroupGroups);
+  // $("#draw-booths-button").click(drawBoothGroups);
+  // $("#draw-booth-rects-text-button").click(function() {
+  //   drawBoothRects();
+  //   drawBoothText();
+  // });
+  // $("#apply-zoom-button").click(applyZoomRect);
 }
 
 initialize();
